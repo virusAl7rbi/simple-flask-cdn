@@ -9,4 +9,4 @@ ENV PYTHONUNBUFFERED 1
 run pip3 install -U pip
 run pip3 install flask gunicorn
 EXPOSE 30
-CMD gunicorn -b 0.0.0.0:30 app:app --reload
+CMD chmod +x gunicorn.sh && ./gunicorn.sh
