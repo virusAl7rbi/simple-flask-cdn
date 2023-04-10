@@ -15,7 +15,7 @@ def upload():
         os.makedirs(req_path)
     with open('/app/'+req_path, "wb") as f:
         f.write(data)
-    return f'http://cdn.al7rbi.tk{req_path}'
+    return f'http://cdn.al7rbi.cf{req_path}'
 
 
 @app.route("/<path:path>")
