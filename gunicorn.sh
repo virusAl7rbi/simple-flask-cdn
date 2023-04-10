@@ -1,2 +1,2 @@
 #!/bin/sh
-gunicorn --chdir app app:app -w 2 --threads 2 -b 0.0.0.0:30 --capture-output --access-logfile /logs/gunicorn-access>
+gunicorn app:app -w 10 --threads 10 -b 0.0.0.0:30 --capture-output
